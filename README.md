@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NYW NFT Marketplace
 
-## Getting Started
+This is a NFT Marketplace powered by Generative AI for creating NFT assets using Stable Diffusion, DALL-E and Midjourney.
 
-First, run the development server:
+## Technologies Used
+
+-Frontend
+
+- [Next.js 15](https://nextjs.org/docs/getting-started)
+- [NextUI v2](https://nextui.org/)
+- [Tailwind CSS](https://tailwindcss.com/) 
+- [TypeScript](https://www.typescriptlang.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+-Backend
+
+- [Node.js](https://nodejs.org/)
+- [Express.js](https://expressjs.com/)
+- [postgres](https://www.postgresql.org/)
+- [subgraph](https://thegraph.com/)
+
+-Smart Contract
+
+- [solidity](https://docs.soliditylang.org/en/v0.8.27/)
+- [hardhat](https://hardhat.org/)
+
+### Install dependencies
+
+You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+
+```bash
+npm install
+```
+
+### Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Setup pnpm (optional)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+public-hoist-pattern[]=*@nextui-org/*
+```
 
-## Learn More
+After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
 
-To learn more about Next.js, take a look at the following resources:
+## Contribution
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a pull request
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
