@@ -1,5 +1,5 @@
 {
-  "name": "NYW NFT",
+  "name": "nynyc",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -53,12 +53,12 @@
     "http-status-codes": "^2.3.0",
     "intl-messageformat": "^10.5.0",
     "moralis": "^2.26.3",
-    "next": "14.2.3",
+    "next": "15.0.3",
     "next-auth": "^4.24.7",
     "next-themes": "^0.2.1",
     "postcss": "8.4.38",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
     "react-toastify": "^10.0.5",
     "sass": "^1.77.5",
     "siwe": "^2.3.2",
@@ -66,7 +66,6 @@
     "tailwind-merge": "^1.14.0",
     "tailwind-variants": "^0.1.20",
     "tailwindcss": "3.4.3",
-    "typescript": "5.0.4",
     "url-join": "^5.0.0",
     "viem": "^2.13.3",
     "wagmi": "^2.9.8",
@@ -74,6 +73,14 @@
   },
   "devDependencies": {
     "@iconify/react": "^5.0.0",
-    "@types/cookie": "^0.6.0"
+    "@types/cookie": "^0.6.0",
+    "typescript": "^5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3"
   }
 }
