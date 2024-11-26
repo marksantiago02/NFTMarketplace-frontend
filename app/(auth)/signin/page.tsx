@@ -14,7 +14,7 @@ import {
   } from "@nextui-org/react";
   import { Icon } from "@iconify/react";
 import PrimaryButton from "@/lib/components/button/PrimaryButton";
-import SiweButton from "@/lib/components/button/SiweButton";
+import SiweButton from "@/lib/components/button/SiweButton"
 
 type Props = {
   accessToken: string;
