@@ -3,8 +3,9 @@ import { useCallback, useState } from "react";
 import { useAccount } from "wagmi";
 import { Icon } from "@iconify/react";
 import { twMerge } from "tailwind-merge";
+import EthereumIcon from "@/public/icon/ethereum";
 
-import EthereumIcon from "@/public/ethereum.svg";
+
 export function shortenAddress(address: string) {
   return `${address?.slice(0, 6)}...${address?.slice(-4)}`;
 }

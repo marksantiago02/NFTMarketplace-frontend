@@ -7,7 +7,8 @@ import { useAccount, useConfig, useDisconnect, useSignMessage } from "wagmi";
 import { Button } from "@nextui-org/button";
 
 import { authChallenge } from "@/lib/net/modules/auth";
-import WalletIcon from "@/public/icon/wallet"
+import WalletIcon from "@/public/icon/wallet.svg";
+
 const SiweButton = () => {
   const { address } = useAccount();
   const { chains } = useConfig();
