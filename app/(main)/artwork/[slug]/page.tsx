@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 import { useAccount } from "wagmi";
-import { Button, Image, Input } from "@nextui-org/react";
+import { Image, Input } from "@nextui-org/react";
 
 import { fetchServer, postServer } from "@/lib/net/fetch/fetch";
 import useNFTMint from "@/lib/web3/hook/nft/useNFTMint";
@@ -38,7 +38,7 @@ export default function ArtworkDetailView({
     try {
       const res = await fetchServer(`/artwork/${hash}`);
       setDetailedArtworkData(res[0]);
-    } catch (err) {}
+    } catch (err) { }
   }, [params.slug]);
 
   useEffect(() => {
