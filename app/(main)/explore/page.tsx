@@ -35,7 +35,6 @@ const Explorer = () => {
   const [listedNFTs, setListedNFTs] = useState<NFTData[]>([]);
 
   const router = useRouter();
-
   const cols = useColNums();
 
   useEffect(() => {
