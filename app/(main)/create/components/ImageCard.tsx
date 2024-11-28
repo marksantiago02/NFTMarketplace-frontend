@@ -52,7 +52,7 @@ export default function ImageCard(props: CardProps) {
         src={imgSrc}
         isZoomed
       />
-      <div className="overlay" onClick={handleClick}>
+      <div className="overlay" onClick={handleClick} >
         <Tooltip
           showArrow
           content="Save to your artwork"
@@ -62,17 +62,20 @@ export default function ImageCard(props: CardProps) {
         >
           <Button
             isIconOnly
+            isLoading={isSaving}
             className="absolute right-3 top-3 z-20 bg-background/60 backdrop-blur-md backdrop-saturate-150 dark:bg-default-100/50"
             radius="full"
             size="sm"
             variant="flat"
             onPress={() => saveImage(address as string, imgSrc, prompt)}
           >
-            <Icon
-              className="text-default-900/50 hover:text-danger-400"
-              icon="solar:heart-bold"
-              width={20}
-            />
+            {!isSaving && (
+              <Icon
+                className="text-default-900/50 hover:text-danger-400"
+                icon="solar:heart-bold"
+                width={20}
+              />
+            )}
           </Button>
         </Tooltip>
       </div>
