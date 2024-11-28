@@ -14,7 +14,7 @@ import { useRouter } from "next/navigation";
 import MultiCarousel from "@/lib/components/carousel/MultiCarousel";
 import NFTShowcaseCard from "@/lib/components/card/NFTShowcaseCard";
 import PrimaryButton from "@/lib/components/button/PrimaryButton";
-import ImageContainer from "@/lib/components/container/ImageCotainer";
+import ImageContainer from "@/lib/components/container/ImageContainer";
 import { fetchServer } from "@/lib/net/fetch/fetch";
 import useColNums from "@/lib/hooks/useColNums";
 
@@ -72,7 +72,7 @@ const Explorer = () => {
               </BreadcrumbItem>
               {selectedNFT !== -1 && (
                 <BreadcrumbItem>
-                  {NFTDetails[selectedNFT - 1].name}
+                  {NFTDetails[selectedNFT - 1]?.name || ''}
                 </BreadcrumbItem>
               )}
             </Breadcrumbs>
@@ -268,5 +268,4 @@ const Explorer = () => {
     </div>
   );
 };
-
 export default Explorer;
