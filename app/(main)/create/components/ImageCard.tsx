@@ -69,13 +69,13 @@ export default function ImageCard(props: CardProps) {
             variant="flat"
             onPress={() => saveImage(address as string, imgSrc, prompt)}
           >
-            {!isSaving && (
+            {!isSaving ? (
               <Icon
                 className="text-default-900/50 hover:text-danger-400"
                 icon="solar:heart-bold"
                 width={20}
               />
-            )}
+            ) : "Saving..."}
           </Button>
         </Tooltip>
       </div>
