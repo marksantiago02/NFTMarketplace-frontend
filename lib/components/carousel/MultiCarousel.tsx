@@ -1,18 +1,16 @@
 "use client";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import type { FC } from 'react';
 
 import NFTViewCard from '@/lib/components/card/NFTViewCard';
-
-import type { FC } from 'react';
+import type { NFTBaseType } from "@/lib/components/card/NFTViewCard";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./style.css";
-
-import type { NFTBaseType } from "@/lib/components/card/NFTViewCard";
 
 type Props = {
   delay: number;
