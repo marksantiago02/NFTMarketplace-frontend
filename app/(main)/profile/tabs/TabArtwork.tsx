@@ -1,5 +1,4 @@
 "use client";
-
 import { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Image } from "@nextui-org/react";
@@ -47,23 +46,6 @@ const TabArtwork = ({ cols }: { cols: number }) => {
                 alt="Your Artwork"
                 onClick={() => router.push(`/artwork/${artwork.image_hash}`)}
               />
-              /*
-                return (
-                  <div className="relative">
-                    {!isLoaded && <div className="loader"></div>}
-                    <Image
-                      key={index}
-                      className={isLoaded ? "imageLoaded py-1" : ""}
-                      src={`${process.env.NEXT_PUBLIC_API_BASE_URL}/${artwork.image_name}`}
-                      width={300}
-                      height={300}
-                      loading="lazy"
-                      alt="Your Artwork"
-                      onLoadingComplete={() => setLoaded(true)}
-                    />
-                  </div>
-                );
-              */
             );
           })}
         </ImageList>
