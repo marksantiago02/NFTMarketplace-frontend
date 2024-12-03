@@ -57,7 +57,6 @@ const TabListed = ({
                 alt={`NFT ${index}`}
                 className="py-1 rounded-lg hover:cursor-pointer"
                 onClick={
-                  //() => router.push(`/nft/${nft.asset_hash}`)
                   () => handleDelist(nft.token_id)
                 }
               />

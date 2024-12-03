@@ -29,7 +29,6 @@ const TabNFT = ({
   setSelected: (type: NFTData | undefined) => void;
   open: () => void;
 }) => {
-  //const router = useRouter();
   const { address, isConnected } = useAccount();
   const [myNFTs, setMyNFTs] = useState<NFTData[]>([]);
 
@@ -67,7 +66,6 @@ const TabNFT = ({
                 alt={`NFT ${index}`}
                 className="py-1 rounded-lg hover:cursor-pointer"
                 onClick={
-                  //() => router.push(`/nft/${nft.asset_hash}`)
                   () => handleClick(nft.token_id)
                 }
               />
