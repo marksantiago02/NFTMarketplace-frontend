@@ -14,7 +14,6 @@ import { Icon } from "@iconify/react";
 import MultiCarousel from "@/lib/components/carousel/MultiCarousel";
 import PrimaryButton from "@/lib/components/button/PrimaryButton";
 import NFTDetails from "@/app/(main)/explore/NFTDetails.json";
-import FireIcon from "@/public/icon/fire.svg";
 import LikeIcon from "@/public/icon/like.svg";
 import FollowIcon from "@/public/icon/follow.svg";
 import { shortenAddress } from "@/lib/components/profile/profile-kit/ProfileHeader";
@@ -176,15 +175,6 @@ export default function NFTDetailView({
       customToast("success", "Successfully Buy NFT");
     }
   }, [isBuyNFTSuccess]);
-
-  // const handleApprove = async () => {
-  //   if (detailedNFTData?.token_id !== undefined) {
-  //     const approveRes = await approveNFT(detailedNFTData?.token_id);
-  //   } else {
-  //     customToast("failed", "NFT is not available");
-  //     return;
-  //   }
-  // };
 
   const handlePurchase = async () => {
     try {
