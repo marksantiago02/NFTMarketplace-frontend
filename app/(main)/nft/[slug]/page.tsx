@@ -292,8 +292,7 @@ export default function NFTDetailView({
         <div className="mt-10 text-center">
           <h2>More by SDXL 1.0 </h2>
           <p>
-            The largest and unique Super rare NFT marketplace For
-            crypto-collectibles
+            The largest and unique Super rare NFT marketplace For crypto-collectibles
           </p>
           <div className="mt-8">
             <MultiCarousel
@@ -305,10 +304,9 @@ export default function NFTDetailView({
           </div>
         </div>
         <div className="mt-10 text-center">
-          <h2>You might also like</h2>
+          <h2>You might also like </h2>
           <p>
-            The largest and unique Super rare NFT marketplace For
-            crypto-collectibles
+            The largest and unique Super rare NFT marketplace For crypto-collectibles
           </p>
           <div className="mt-8">
             <MultiCarousel
