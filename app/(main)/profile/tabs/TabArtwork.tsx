@@ -1,5 +1,5 @@
 "use client";
-import { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Image } from "@nextui-org/react";
 import { useAccount } from "wagmi";
@@ -15,9 +15,9 @@ type ArtworkData = {
 };
 
 const TabArtwork = ({ cols }: { cols: number }) => {
-  const [artworks, setArtworks] = useState<ArtworkData[]>([]);
   const router = useRouter();
   const { address } = useAccount();
+  const [artworks, setArtworks] = useState<ArtworkData[]>([]);
 
   const fetchArtworks = useCallback(async () => {
     try {
