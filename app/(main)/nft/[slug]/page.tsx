@@ -18,7 +18,6 @@ import LikeIcon from "@/public/icon/like.svg";
 import FollowIcon from "@/public/icon/follow.svg";
 import { shortenAddress } from "@/lib/components/profile/profile-kit/ProfileHeader";
 import { fetchServer, postServer } from "@/lib/net/fetch/fetch";
-
 import useToast from "@/lib/hooks/toast/useToast";
 import useComments from "@/lib/hooks/nft/useComments";
 import useLike from "@/lib/hooks/nft/useLike";
@@ -68,7 +67,7 @@ const PaginationComments = ({
   address: string;
 }) => {
   const [page, setPage] = useState<number>(1);
-  const [commentText, setCommentText] = useState("");
+  const [commentText, setCommentText] = useState<string>("");;
 
   const { data, maxPage, totalCnt, fetchData } = usePagination(hash, page);
   const { createComments } = useComments();
