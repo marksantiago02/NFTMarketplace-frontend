@@ -3,13 +3,11 @@ import { useEffect, useState } from "react";
 import {
   Button,
   Input,
-  Image,
   Switch,
   Breadcrumbs,
   BreadcrumbItem,
 } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
-import { useRouter } from "next/navigation";
 
 import MultiCarousel from "@/lib/components/carousel/MultiCarousel";
 import NFTShowcaseCard from "@/lib/components/card/NFTShowcaseCard";
@@ -26,7 +24,6 @@ import NewIcon from "@/public/icon/new.svg";
 
 import NFTDetails from "@/app/(main)/explore/NFTDetails.json";
 
-import type { CommentType } from "@/lib/components/card/NFTViewCard";
 import type { NFTData } from "@/app/(main)/profile/tabs/TabNFT";
 
 const Explorer = () => {
@@ -34,7 +31,6 @@ const Explorer = () => {
   const [selectedNFT, setSelectedNFT] = useState(-1);
   const [listedNFTs, setListedNFTs] = useState<NFTData[]>([]);
 
-  const router = useRouter();
   const cols = useColNums();
 
   useEffect(() => {
@@ -127,9 +123,8 @@ const Explorer = () => {
                 PFP
               </span>
               <span
-                className={`${
-                  selectedItem == 2 ? "text-light-blueeee" : ""
-                } item`}
+                className={`${selectedItem == 2 ? "text-light-blueeee" : ""
+                  } item`}
                 role="button"
                 tabIndex={0}
                 onClick={() => setSelectedItem(2)}
