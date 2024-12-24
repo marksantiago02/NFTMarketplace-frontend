@@ -6,7 +6,6 @@ import {
   Input,
   Link,
   Divider,
-  User,
   Checkbox,
 } from "@nextui-org/react";
 import { Icon } from "@iconify/react";
