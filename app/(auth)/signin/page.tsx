@@ -9,17 +9,11 @@ import {
     Input,
     Link,
     Divider,
-    User,
     Checkbox,
   } from "@nextui-org/react";
   import { Icon } from "@iconify/react";
 import PrimaryButton from "@/lib/components/button/PrimaryButton";
 import SiweButton from "@/lib/components/button/SiweButton"
-
-type Props = {
-  accessToken: string;
-  provider: string; 
-}
 
 export default function Component() {
   const { address, isConnected } = useAccount();
