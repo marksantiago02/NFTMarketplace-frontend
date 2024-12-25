@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
-import { useAccount } from "wagmi";
 import { Image, Input } from "@nextui-org/react";
+import { useAccount } from "wagmi";
 
 import { fetchServer, postServer } from "@/lib/net/fetch/fetch";
 import useNFTMint from "@/lib/web3/hook/nft/useNFTMint";
