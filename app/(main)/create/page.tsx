@@ -50,8 +50,6 @@ const CreateNFT = () => {
   const [nftName, setNftName] = useState("");
   const [royalty, setRoyalty] = useState(0);
 
-  //hooks
-
   const imageSizeArr = [
     { width: 1024, height: 1024 },
     { width: 1024, height: 768 },
@@ -71,7 +69,7 @@ const CreateNFT = () => {
     if (divElement) {
       window.scrollTo({
         top: divElement.getBoundingClientRect().top + window.pageYOffset - 120,
-        behavior: "smooth", // Optional: Add smooth scrolling effect
+        behavior: "smooth",
       });
     }
   }, []);
