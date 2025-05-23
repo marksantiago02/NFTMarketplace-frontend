@@ -4,7 +4,7 @@ import { ChangeEvent, useRef, useState } from "react";
 export default function ImageUploader() {
   const uploadInputRef = useRef<HTMLInputElement>(null);
   const [file, setFile] = useState<File | null>(null);
-  const [preview, setPreview] = useState<string | null>(null); // Changed the type of preview to string | null
+  const [preview, setPreview] = useState<string | null>(null);
 
   const onFileChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files && event.target.files[0];
@@ -13,12 +13,12 @@ export default function ImageUploader() {
     if (file) {
       const reader = new FileReader();
       reader.onloadend = () => {
-        setPreview(reader.result as string); // Cast the result to string
+        setPreview(reader.result as string);
       };
       reader.readAsDataURL(file);
     }
   };
-  
+
   return (
     <div
       onClick={() => {
