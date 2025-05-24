@@ -9,7 +9,6 @@ import {
   Image,
 } from "@nextui-org/react";
 
-import ImageUploader from "../ImageUploader";
 import RatioCard from "../RatioCard";
 
 export default function TabImage({
